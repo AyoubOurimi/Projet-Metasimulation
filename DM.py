@@ -61,10 +61,8 @@ def lire_automate_mot_via_fichier(nom_fichier):
                 etats.update(cle_triplet)
                 etats.add(valeur)
                 
-    automate = Automate_Cellulaire(etats, transitions)
-    configuration = Configuration(mot)
+    return Automate_Cellulaire(etats, transitions), Configuration(mot)
 
-    return automate, configuration
 
 #Question 4 :
 def configuration_suivante(automate, configuration):
@@ -72,38 +70,51 @@ def configuration_suivante(automate, configuration):
     for i in range(len(configuration)):
         gauche, milieu, droite = configuration.get_index_etat(i-1), configuration.get_index_etat(i), configuration.get_index_etat(i+1)
         config_suivante.append(automate.get_etat_apres_transition(gauche, milieu, droite))
-        print(config_suivante)
     
     return Configuration(config_suivante)
 
 #Question 5 :
-def simule_calcul_automate(mot, automate, ):
-    pass
+def simule_calcul_automate(mot, automate, N_etapes = False, Transi_p = False, Config_pareil = False):
+    Config = Configuration(mot)
+
+    if N_etapes:
+        n = 5 #on choisit le n ici
+        l_configs = [Config.get_list_etats()]
+        for _ in range(n):
+            Config = configuration_suivante(automate, Config)
+            l_configs.append(Config.get_list_etats())
+
+        return l_configs
+
+    if Transi_p:
+        transi_choisit = {(1,1,0): 1}
+    
         
 
     
         
     
 
-""" BELEK ON AJOUTE DES SURCHARGE D'OPERATEUR  """
+""" BELEK ON CONSIDERE QUE LES VALEUR INEXISTANT C'EST □ """
 
 #on fait les tests dans le main avec comme transi la regle 110 comme dans le dm
 def main():
     A = Automate_Cellulaire([0,1], {(1, 1, 1): 0, (1, 1, 0): 1, (1, 0, 1): 1, (1, 0, 0): 0, (0, 1, 1): 1, (0, 1, 0): 1, (0, 0, 1): 1, (0, 0, 0): 0})
     
-    """ print(A.etats)
+    """ print(A.get_etats())
 
-    print(A.transition)
+    print(A.get_transition())
 
     print(A.get_etat_apres_transition(0,1,1))
 
     question3 = lire_automate_mot_via_fichier("question3.txt")
-    print(question3) """
+    print(question3[0].get_transition()) """
 
     C = Configuration([0,1,1,0,1,0,0,1,1])
-    question4 = configuration_suivante(A,C)
-    print(question4.l_etats)
+    """ question4 = configuration_suivante(A,C)
+    print(question4.l_etats) """
 
+    print(simule_calcul_automate([0,0,0,1,0,0,0], A, N_etapes = True))
 
 if __name__ == "__main__":
     main()
