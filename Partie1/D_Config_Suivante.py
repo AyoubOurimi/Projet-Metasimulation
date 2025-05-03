@@ -36,6 +36,7 @@ def configuration_suivante_graph(automate, configuration):
     config_suivante = []
 
     for i in range(-1, len(configuration) + 1):
+        # récupère les états gauche, milieu et droite en tenant compte du padding
         gauche = configuration.get_index_etat(i-1)
         milieu = configuration.get_index_etat(i)
         droite = configuration.get_index_etat(i+1)

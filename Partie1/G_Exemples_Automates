@@ -28,13 +28,13 @@ def ecrire_automate_cyclique_fichier(nom_fichier, alphabet, mot):
 
 
 def main():
-  # 1. Automate à croissance infinie
+  # 1. automate à croissance infinie
   print("--- Simulation : Croissance infinie ---")
 
   automate, config = lire_automate_mot_via_fichier("Assets/croissance_infini.txt")
   simule_calcul_automate_graphique(config.get_list_etats(), automate, n_etapes=15)
 
-  # 2. Automate cyclique
+  # 2. automate cyclique
   print("\n--- Simulation : Automate cyclique ---")
 
   alphabet = list("ABCDEF")
@@ -43,12 +43,12 @@ def main():
   automate, config = lire_automate_mot_via_fichier("Assets/automate_cyclique.txt")
   simule_calcul_automate_graphique(config.get_list_etats(), automate, n_etapes=15) 
 
-  # 3. Automate qui représente aⁿbⁿ
+  # 3. automate qui représente aⁿbⁿ
   print("\n--- Simulation : Automate qui représente aⁿbⁿ ---")
   automate, config = lire_automate_mot_via_fichier("Assets/automate_aⁿbⁿ.txt")
   simule_calcul_automate_graphique(config.get_list_etats(), automate, n_etapes=15)
 
-  # 4. Automate qui représente le triangle de Pascal mod 2 (XOR)
+  # 4. automate qui représente le triangle de Pascal mod 2 (XOR)
   print("\n--- Simulation : Automate qui représente le triangle de Pascal mod 2 ---")
   automate, config = lire_automate_mot_via_fichier("Assets/automate_Pascal.txt")
   simule_calcul_automate_graphique(config.get_list_etats(), automate, n_etapes=30)

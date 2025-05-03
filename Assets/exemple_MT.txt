@@ -1,0 +1,15 @@
+mot = 1100
+
+état initial = q0
+
+q0 1 => q1 X R
+q0 Y => q0 Y R
+q0 □ => ACCEPT □ S
+q0 0 => REJECT □ S
+q1 1 => q1 1 R
+q1 Y => q1 Y R
+q1 0 => q2 Y L
+q1 □ => REJECT □ S
+q2 1 => q2 1 L
+q2 Y => q2 Y L
+q2 X => q0 X R

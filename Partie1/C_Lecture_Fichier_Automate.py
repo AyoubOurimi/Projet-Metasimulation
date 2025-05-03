@@ -22,21 +22,21 @@ def lire_automate_mot_via_fichier(nom_fichier):
             if not ligne:
                 continue  
             if ligne.startswith("mot ="):
-                mot = list(ligne.split("=", 1)[1].strip())
-            elif '=>' in ligne:
-                gauche, droite = ligne.split("=>")
+                mot = list(ligne.split("=", 1)[1].strip()) 
+            elif '=>' in ligne: 
+                gauche, droite = ligne.split("=>") # sépare la partie gauche et droite de la transition 
                 cle_triplet = tuple(gauche.strip().split())
                 valeur = droite.strip()
-                transitions[cle_triplet] = valeur
+                transitions[cle_triplet] = valeur # récupère les transitions
 
-                #on ajoute tous les états vus
+                # ajoute tous les états vus
                 etats.update(cle_triplet)
                 etats.add(valeur)
 
     return Automate_Cellulaire(etats, transitions), Configuration(mot)
 
 def main():
-    automate, config = lire_automate_mot_via_fichier("Assets/question3.txt")
+    automate, config = lire_automate_mot_via_fichier("Assets/exemple_Automate.txt")
 
     print(f"Instance d'Automate_Cellulaire {automate}")
     print(f"Instance de Configuration {config}")
