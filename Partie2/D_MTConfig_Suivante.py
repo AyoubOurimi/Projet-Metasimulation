@@ -50,8 +50,8 @@ def main():
     machine, config = lire_MT_mot_via_fichier("Assets/exemple_MT.txt")
     config_suivante = configuration_suivante_MT(machine, config)
 
-    print(f"La configuration suivante de la bande {config.get_bande()} avec la tête en position {config.get_pos()} et l'état courant {config.get_etat_courant()} devient : ")
-    print(f"bande : {config_suivante.get_bande()}, tête en position : {config_suivante.get_pos()}, état courant : {config_suivante.get_etat_courant()}.")
+    print(f"\nLa configuration suivante de la bande {config.get_bande()} avec la tête en position {config.get_pos()} et l'état courant {config.get_etat_courant()} devient : ")
+    print(f"bande : {config_suivante.get_bande()}, tête en position : {config_suivante.get_pos()}, état courant : {config_suivante.get_etat_courant()}.\n")
 
 if __name__ == "__main__":
     main()

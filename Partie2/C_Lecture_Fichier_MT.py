@@ -47,7 +47,7 @@ def lire_MT_mot_via_fichier(nom_fichier):
 def main():
     machine, config = lire_MT_mot_via_fichier("Assets/exemple_MT.txt")
 
-    print(f"Instance de Machine_Turing : {machine}")
+    print(f"\nInstance de Machine_Turing : {machine}")
     print(f"Instance de MTConfiguration : {config}")
 
     print(f"États de la machine : {machine.get_etats()}")
@@ -55,7 +55,7 @@ def main():
 
     print(f"Bande initiale : {config.get_bande()}")
     print(f"Position initiale de la tête : {config.get_pos()}")
-    print(f"État initial : {config.get_etat_courant()}")
+    print(f"État initial : {config.get_etat_courant()}\n")
 
 if __name__ == "__main__":
     main()

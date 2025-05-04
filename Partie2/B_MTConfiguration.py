@@ -46,7 +46,7 @@ def main():
 
     config = MTConfiguration(bande, pos, etat)
 
-    print(f"Bande actuelle : {config.get_bande()}")
+    print(f"\nBande actuelle : {config.get_bande()}")
     print(f"Position de la tête : {config.get_pos()}")
     print(f"État courant : {config.get_etat_courant()}")
 
@@ -57,7 +57,7 @@ def main():
     config.ecrire_symbole(0)
 
     print(f"Bande après écriture : {config.get_bande()}")
-    print(f"Taille actuelle de la bande : {len(config)}")
+    print(f"Taille actuelle de la bande : {len(config)}\n")
 
 if __name__ == "__main__":
     main()

@@ -29,9 +29,9 @@ def ecrire_automate_cyclique_fichier(nom_fichier, alphabet, mot):
 
 def main():
   # 1. automate à croissance infinie
-  print("--- Simulation : Croissance infinie ---")
+  print("\n--- Simulation : Croissance infinie ---")
 
-  automate, config = lire_automate_mot_via_fichier("Assets/croissance_infini.txt")
+  automate, config = lire_automate_mot_via_fichier("Assets/automate_croissance_infini.txt")
   simule_calcul_automate_graphique(config.get_list_etats(), automate, n_etapes=15)
 
   # 2. automate cyclique
@@ -49,7 +49,7 @@ def main():
   simule_calcul_automate_graphique(config.get_list_etats(), automate, n_etapes=15)
 
   # 4. automate qui représente le triangle de Pascal mod 2 (XOR)
-  print("\n--- Simulation : Automate qui représente le triangle de Pascal mod 2 ---")
+  print("\n--- Simulation : Automate qui représente le triangle de Pascal mod 2 ---\n")
   automate, config = lire_automate_mot_via_fichier("Assets/automate_Pascal.txt")
   simule_calcul_automate_graphique(config.get_list_etats(), automate, n_etapes=30)
 

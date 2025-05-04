@@ -52,7 +52,7 @@ def main():
     config = Configuration([0,1,1,0,1,0,0,1,1])
 
     config_suivante = configuration_suivante(automate, config)
-    print(f"La configuration suivante de cette configuration {config.l_etats} est : {config_suivante.l_etats}")
+    print(f"\nLa configuration suivante de cette configuration {config.l_etats} est : {config_suivante.l_etats}\n")
 
 if __name__ == "__main__":
     main()

@@ -38,12 +38,12 @@ class Automate_Cellulaire:
 def main():
     automate = Automate_Cellulaire([0,1], {(1, 1, 1): 0, (1, 1, 0): 1, (1, 0, 1): 1, (1, 0, 0): 0, (0, 1, 1): 1, (0, 1, 0): 1, (0, 0, 1): 1, (0, 0, 0): 0})
 
-    print(f"Ensemble des états possibles : {automate.get_etats()}")
+    print(f"\nEnsemble des états possibles : {automate.get_etats()}")
 
     print(f"Dictionnaire contenant les transitions : {automate.get_transition()}")
 
     triplet = (0,1,1)
-    print(f"Le triplet {triplet} renvoie après transition : {automate.get_etat_apres_transition(triplet[0],triplet[1],triplet[2])}")
+    print(f"Le triplet {triplet} renvoie après transition : {automate.get_etat_apres_transition(triplet[0],triplet[1],triplet[2])}\n")
 
 if __name__ == "__main__":
     main()

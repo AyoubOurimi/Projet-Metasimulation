@@ -38,13 +38,13 @@ def lire_automate_mot_via_fichier(nom_fichier):
 def main():
     automate, config = lire_automate_mot_via_fichier("Assets/exemple_Automate.txt")
 
-    print(f"Instance d'Automate_Cellulaire {automate}")
+    print(f"\nInstance d'Automate_Cellulaire {automate}")
     print(f"Instance de Configuration {config}")
 
     print(f"Etats : {automate.get_etats()}")
     print(f"Transitions : {automate.get_transition()}")
 
-    print(f"Le mot en liste d'état est : {config.get_list_etats()}")
+    print(f"Le mot en liste d'état est : {config.get_list_etats()}\n")
 
 if __name__ == "__main__":
     main()

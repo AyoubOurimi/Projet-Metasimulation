@@ -34,14 +34,14 @@ def simulation_MT(mot, machine) :
 
 def main():
     mot_accept = "1100" # exemple de mot
-    machine, _ = lire_MT_mot_via_fichier("Assets/exemple_MT.txt") # MT qui verifie 1ⁿ0ⁿ
+    machine, _ = lire_MT_mot_via_fichier("Assets/exemple_MT.txt") # MT qui verifie le nombre de 1 est pair
     resultat_accept = simulation_MT(mot_accept, machine)
-    print(f"Le mot {''.join(mot_accept)} est {'accepté' if resultat_accept else 'rejeté'} par la machine.")
+    print(f"\nLe mot {''.join(mot_accept)} est {'accepté' if resultat_accept else 'rejeté'} par la machine.")
 
-    mot_reject = "111100" # exemple de mot
-    machine, _ = lire_MT_mot_via_fichier("Assets/exemple_MT.txt") # MT qui verifie 1ⁿ0ⁿ
+    mot_reject = "11100" # exemple de mot
+    machine, _ = lire_MT_mot_via_fichier("Assets/exemple_MT.txt") # MT qui verifie le nombre de 1 est pair
     resultat_reject = simulation_MT(mot_reject, machine)
-    print(f"Le mot {''.join(mot_reject)} est {'accepté' if resultat_reject else 'rejeté'} par la machine.")
+    print(f"Le mot {''.join(mot_reject)} est {'accepté' if resultat_reject else 'rejeté'} par la machine.\n")
 
 if __name__ == "__main__":
     main()

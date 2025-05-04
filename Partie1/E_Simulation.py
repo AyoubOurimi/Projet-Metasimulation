@@ -54,12 +54,12 @@ def simule_calcul_automate(mot, automate, N_etapes=None, Transi_p=None, Config_p
 def main():
     automate = Automate_Cellulaire([0,1], {(1, 1, 1): 0, (1, 1, 0): 1, (1, 0, 1): 1, (1, 0, 0): 0, (0, 1, 1): 1, (0, 1, 0): 1, (0, 0, 1): 1, (0, 0, 0): 0})
 
-    print(f"Simulation avec mode -> [N_etapes] : {simule_calcul_automate([0,0,0,1,0,0,0], automate, N_etapes = 5)}")
+    print(f"\nSimulation avec mode -> [N_etapes] : {simule_calcul_automate([0,0,0,1,0,0,0], automate, N_etapes = 5)}")
     print(f"Simulation avec mode -> [Transi_p] : {simule_calcul_automate([0,0,0,1,0,0,0], automate, Transi_p = (1,1,1))}") 
     print(f"Simulation avec mode -> [Config_pareil] : {simule_calcul_automate([0,0,1,0,0], automate, Config_pareil = True)}")
 
     # ca va simuler le mode tq on a le plus court nombre de figurations dans la liste
-    print(f"Simulation avec tous les 3 modes : {simule_calcul_automate([0,0,0,1,0,0,0], automate, N_etapes = 5, Transi_p = (1,1,1), Config_pareil = True)}") 
+    print(f"Simulation avec tous les 3 modes : {simule_calcul_automate([0,0,0,1,0,0,0], automate, N_etapes = 5, Transi_p = (1,1,1), Config_pareil = True)}\n") 
 
 
 if __name__ == "__main__":

@@ -34,8 +34,8 @@ def main():
 
     machine = Machine_Turing(etats, transitions, etat_initial)
 
-    print(f"Ensemble des états : {machine.get_etats()}")
-    print(f"Dictionnaire contenant les transitions : {machine.get_transition()}")
+    print(f"\nEnsemble des états : {machine.get_etats()}")
+    print(f"Dictionnaire contenant les transitions : {machine.get_transition()}\n")
 
 if __name__ == "__main__":
     main()

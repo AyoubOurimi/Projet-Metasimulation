@@ -32,7 +32,7 @@ class Configuration:
 def main():
     C = Configuration([0, 1, 1, 0, 1, 0, 0, 1, 1])
 
-    print(f"Liste des états : {C.get_list_etats()}")
+    print(f"\nListe des états : {C.get_list_etats()}")
 
     index_test1 = 3
     print(f"État à l'index {index_test1} : {C.get_index_etat(index_test1)}")
@@ -43,7 +43,7 @@ def main():
     index_test3 = 20
     print(f"État à l'index {index_test3} (hors limites) : {C.get_index_etat(index_test3)}")
 
-    print(f"Longueur de la configuration : {len(C)}")
+    print(f"Longueur de la configuration : {len(C)}\n")
 
 if __name__ == "__main__":
     main()
