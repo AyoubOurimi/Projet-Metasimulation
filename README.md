@@ -1,6 +1,6 @@
-# 🧠 Projet : MetaSimulation
+# Projet : MetaSimulation
 
-## 📁 Organisation du projet
+## Organisation du projet
 
 Le projet est divisé en trois grandes parties, chacune correspondant à une série de questions sur les automates cellulaires et les machines de Turing.
 
@@ -16,7 +16,7 @@ Projet-Metasimulation/
 
 ---
 
-## ▶️ Lancer le projet
+## Lancer le projet
 
 Vous pouvez exécuter automatiquement toutes les parties en ligne de commande :
 
@@ -34,9 +34,9 @@ make partie3
 
 ---
 
-## 🧩 Contenu par Partie
+##  Contenu par Partie
 
-### 🔹 Partie 1 – Automates cellulaires
+### Partie 1 – Automates cellulaires
 
 - Mise en place des structures de données pour représenter un automate cellulaire
 - Lecture de fichiers contenant les règles de transition
@@ -47,14 +47,14 @@ make partie3
   - `automate_symétrique`
   - `automate_croissance_infini`
 
-### 🔹 Partie 2 – Machines de Turing
+### Partie 2 – Machines de Turing
 
 - Modélisation d’une machine de Turing
 - Lecture des transitions à partir de fichiers
 - Simulation de l’exécution sur une bande
 - Détermination de l’acceptation ou du rejet d’un mot
 
-### 🔹 Partie 3 – Simulation de MT avec AC
+### Partie 3 – Simulation de MT avec AC
 
 - Traduction d’une machine de Turing en automate cellulaire
 - Vérification que les deux modèles donnent les mêmes résultats
@@ -62,7 +62,7 @@ make partie3
 
 ---
 
-## 📦 Ce dont vous avez besoin
+## Ce dont vous avez besoin
 
 Aucune bibliothèque externe n’est nécessaire. Le projet fonctionne uniquement avec **Python 3**.
 
@@ -74,13 +74,13 @@ Pour que tout fonctionne correctement :
 
 ---
 
-## 📚 Exemples de fichiers
+## Exemples de fichiers
 
 - `Assets/exemple_MT.txt` : contient les transitions d’une machine de Turing
 - `Assets/automate_cyclique.txt`, etc. : règles d’un automate cellulaire, utilisées dans les simulations graphiques
 
 ---
 
-## ✍️ Auteurs
+## Auteurs
 
 Projet réalisé par OURIMI Ayoub et LALMASSI Ilyan  dans le cadre du module **IN620 - Méta-simulation**, année universitaire 2024–2025.
