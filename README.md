@@ -77,7 +77,7 @@ Pour que tout fonctionne correctement :
 ## Exemples de fichiers
 
 - `Assets/exemple_MT.txt` : contient les transitions d’une machine de Turing
-- `Assets/automate_cyclique.txt`, etc. : règles d’un automate cellulaire, utilisées dans les simulations graphiques
+- `Assets/exemple_Automate.txt`, etc. : règles d’un automate cellulaire, utilisées dans les simulations graphiques
 
 ---
 
