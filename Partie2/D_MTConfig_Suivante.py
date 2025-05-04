@@ -47,7 +47,7 @@ def configuration_suivante_MT(machine, configuration):
     return MTConfiguration(nouvelle_bande, pos, etat_suivant)
 
 def main():
-    machine, config = lire_MT_mot_via_fichier("Assets/exemple_MT.txt")
+    machine, config = lire_MT_mot_via_fichier("Assets/exemple_MT.txt") # MT qui transforme les 1 en 0 et les 0 en 1
     config_suivante = configuration_suivante_MT(machine, config)
 
     print(f"\nLa configuration suivante de la bande {config.get_bande()} avec la tête en position {config.get_pos()} et l'état courant {config.get_etat_courant()} devient : ")

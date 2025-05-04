@@ -16,9 +16,9 @@ def simule_calcul_automate_graphique(mot, automate, n_etapes=None, transi_p=None
 
     :param mot: Mot initial (liste d'états)
     :param automate: Instance d'Automate_Cellulaire
-    :param N_etapes: Nombre d'étapes maximum (optionnel)
-    :param Transi_p: Triplet de transition déclencheur d'arrêt (optionnel)
-    :param Config_pareil: Si True, arrêt si la configuration ne change plus
+    :param n_etapes: Nombre d'étapes maximum (optionnel)
+    :param transi_p: Triplet de transition déclencheur d'arrêt (optionnel)
+    :param config_pareil: Si True, arrêt si la configuration ne change plus
     :return: Liste des configurations successives
     """
     config = Configuration(mot)
@@ -76,8 +76,8 @@ def simule_calcul_automate_graphique(mot, automate, n_etapes=None, transi_p=None
                 ax.text(x, y, val, ha='center', va='center', color='white', fontsize=8)
 
         ax.set_title(f"évolution – étape {etape}") # titre de la figure 
-        ax.set_xlabel("temps") 
-        ax.set_ylabel("cellules")
+        ax.set_xlabel("cellules") 
+        ax.set_ylabel("temps")
         ax.set_xticks(np.arange(tableau_etats.shape[1])) 
         ax.set_yticks(np.arange(tableau_etats.shape[0]))
 

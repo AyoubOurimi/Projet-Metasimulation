@@ -76,8 +76,9 @@ Pour que tout fonctionne correctement :
 
 ## Exemples de fichiers
 
-- `Assets/exemple_MT.txt` : contient les transitions d’une machine de Turing
 - `Assets/exemple_Automate.txt`, etc. : règles d’un automate cellulaire, utilisées dans les simulations graphiques
+- `Assets/exemple_MT.txt` : contient les transitions d’une machine de Turing qui transforme les 1 en 0 et les 0 en 1
+- `Assets/exemple_MT_pair.txt` : contient les transitions d’une machine de Turing qui vérifie si le nombre de 1 est pair
 
 ---
 
