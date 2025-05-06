@@ -1,7 +1,6 @@
 # Question 6 :
 
 import matplotlib.pyplot as plt
-import matplotlib.colors as mcolors
 import numpy as np
 
 from A_AutomateCellulaire import Automate_Cellulaire
@@ -10,7 +9,7 @@ from D_Config_Suivante import configuration_suivante_graph
 
 def simule_calcul_automate_graphique(mot, automate, n_etapes=None, transi_p=None, config_pareil=False):
     """
-    Simule et affiche graphiquement l’évolution d’un automate cellulaire.
+    Simule et affiche graphiquement l'évolution d'un automate cellulaire.
 
     Affiche chaque étape avec une légende, une carte de couleurs et les états affichés dans les cellules.
 

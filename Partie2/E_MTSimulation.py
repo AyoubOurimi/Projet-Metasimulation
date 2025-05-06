@@ -22,10 +22,10 @@ def simulation_MT(mot, machine) :
     while True:
         # vérifier si la configuration actuelle est un état d'acceptation ou de rejet
         if conf.get_etat_courant() == machine.etat_accept:
-            """ print(f"La liste des configurations est : {configs}") """ # permet de voir les configurations successives
+            print(f"\nLa liste des configurations est : {configs}") # permet de voir les configurations successives
             return True
         elif conf.get_etat_courant() == machine.etat_reject:
-            """ print(f"La liste des configurations est : {configs}") """ # permet de voir les configurations successives
+            print(f"La liste des configurations est : {configs}") # permet de voir les configurations successives
             return False
 
         # recupérer la configuration suivante

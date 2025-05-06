@@ -33,9 +33,9 @@ def MT_vers_AC(machine_turing):
 
     alphabet = machine_turing.alphabet_travail
     transitions_MT = machine_turing.get_transition()
-    etats_MT = machine_turing.get_etats()
+    etats_MT = machine_turing.get_etats() # états de la machine de Turing
 
-    etats_AC = {(q, s) for q in etats_MT.union({'⋆'}) for s in alphabet}
+    etats_AC = {(q, s) for q in etats_MT.union({'⋆'}) for s in alphabet} # états de l'automate cellulaires
     transitions_AC = {}
 
     # aucune cellule du triplet ne contient la tête => on recopie juste le symbole central
